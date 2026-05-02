@@ -1,0 +1,6 @@
+git init 
+git add README.md 
+git commit -m "premier commit" 
+git branch -M main 
+git remote add origin https://github.com/celestinalmeras/Comment-fonctionner-un-ordinateur-pour-les-nuls-.git
+ git push -u origin main

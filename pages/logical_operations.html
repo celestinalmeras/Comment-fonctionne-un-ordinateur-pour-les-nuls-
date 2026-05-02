@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8"/>
+	<link rel="stylesheet" type="text/css" href="../css/logical_operations_style.css">
+    <title>Comment un ordinateur peut-il faire des opérations logiques ?</title>
+</head>
+<body>
+    <h1>Comment un ordinateur peut-il faire des opérations logiques ?</h1>
+
+        <h2><u>Rappels de la page précédente :</u></h2>
+            <p>Un ordinateur, à la base, ne fait rien d’autre que <strong>manipuler des 0 et des 1</strong>. Ces chiffres représentent des <strong>signaux électriques</strong> :</p>
+            <ul>
+                <li><code>0</code> = pas (ou peu) de différence de potentiel (tension faible)</li>
+                <li><code>1</code> = différence de potentiel présente (tension élevée)</li>
+            </ul>
+            <p>À partir de ces deux états, l’ordinateur peut <strong>prendre des décisions</strong> et <strong>faire des calculs</strong>.</p>
+            <p>Voir <a href="binary.html">ici</a> si besoin !</p>
+
+        <h2>Les portes logiques : les briques de l’ordinateur</h2>
+            <p>Les portes logiques sont comme des <strong>mini-interrupteurs électroniques</strong>. Elles prennent un ou plusieurs 0 ou 1 en entrée et produisent un 0 ou un 1 en sortie, selon une règle précise.</p>
+            <p>Voici les principales portes :</p>
+            <ol type="1">
+                <li><a href="#NOT">Porte <strong>NON</strong> (NOT)</a></li>
+                <li><a href="#AND">Porte <strong>ET</strong> (AND)</a></li>
+                <li><a href="#OR">Porte <strong>OU</strong> (OR)</a></li>
+                <li><a href="#XOR">Porte <strong>OU exclusif</strong> (XOR)</a></li>
+            </ol>
+            
+            <h3 id="NOT">La porte NON (NOT)</h3>
+                <ul>
+                    <li>Fonction : inverse la valeur de l’entrée.</li>
+                    <li>
+                        Symboles et table de vérité :<img src="../assets/porte_logique_not.png">
+                        <a href="https://codeur-pro.fr/les-portes-et-fonctions-logiques/">&rarr; Source</a>
+                    </li>
+                    <li><strong><em>NON</em></strong> signifie que l'on prend l'inverse de l'entrée.</li>
+                </ul>
+
+            <h3 id="AND">La porte ET (AND)</h3>
+                <ul>
+                    <li>Fonction : la sortie vaut 1 seulement si toutes les entrées sont 1.</li>
+                    <li>
+                        Symboles et table de vérité :<img src="../assets/porte_logique_and.png">
+                        <a href="https://codeur-pro.fr/les-portes-et-fonctions-logiques/">&rarr; Source</a>
+                        <li><strong><em>ET</em></strong> signifie les deux conditions vraies.</li>
+                    </li>
+                </ul>
+
+            <h3 id="OR">La porte OU (OR)</h3>
+                <ul>
+                    <li>Fonction : la sortie vaut 1 si au moins une entrée est 1.</li>
+                    <li>
+                        Symboles et table de vérité :<img src="../assets/porte_logique_or.png">
+                        <a href="https://codeur-pro.fr/les-portes-et-fonctions-logiques/">&rarr; Source</a>
+                    </li>
+                    <li><strong><em>OU</em></strong> signifie au moins une condition vraie.</li>
+                </ul>
+            
+            <h3 id="XOR">La porte OU exclusif (XOR)</h3>
+                <ul>
+                    <li>Fonction : la sortie vaut 1 si une seule entrée est 1, mais pas les deux.</li>
+                    <li>
+                        Symboles et table de vérité :<img src="../assets/porte_logique_xor.png">
+                        <a href="https://codeur-pro.fr/les-portes-et-fonctions-logiques/">&rarr; Source</a>
+                    </li>
+                    <li><strong><em>OU exclusif</em></strong> signifie exactement une condition vraie.</li>
+                </ul>
+
+        <h2>Les circuits logiques avancés</h2>
+            <p>Toutes les portes logiques que nous avons vues (AND, OR, NOT, XOR…) sont construites avec de <strong>minuscules interrupteurs électroniques</strong> appelés <a href="https://fr.wikipedia.org/wiki/Transistor"><strong>transistors</strong></a>.</p>
+            <ul>
+                <li>Les transistors permettent de contrôler le passage du courant.</li>
+                <li>Selon les tensions d’entrée, ils laissent passer ou bloquent le courant pour produire un 0 ou un 1.</li>
+            </ul>
+            <p>Mais il existe beaucoup plus que de simples portes logiques : en combinant plusieurs portes, on peut créer des <strong>circuits plus complexes</strong>.</p>
+
+            <h3> A. Les circuits de logique combinatoire</h3>
+                <p><u>Définition :</u> <em>Un circuit combinatoire produit une sortie uniquement en fonction des entrées actuelles.</em></p>
+                <h4>Les Additionneurs</h4>
+                    <p><u>Définition :</u> <em>Ils permettent d’additionner des nombres binaires.</em></p>
+                    <h5>1. Le Demi-additionneur</h5>
+                        <img src="../assets/demi-additionneur_binaire.png">
+                        <a href="https://codeur-pro.fr/les-portes-et-fonctions-logiques/">&rarr; Source</a>
+                        <p>&rarr; Il additionne 2 bits, produit une somme et une retenue.</p>
+
+                    <h5>2. L'Additionneur complet</h5>
+                        <img src="../assets/additionneur_binaire_complet.png">
+                        <a href="https://codeur-pro.fr/les-portes-et-fonctions-logiques/">&rarr; Source</a>
+                        <p>&rarr; Il additionne 2 bits + la retenue d’une étape précédente, produit une somme et une retenue.</p>
+                    
+                    <h5>3. La Chaîne d'additionneurs</h5>
+                        <img src="../assets/additionneur_registre_binaire.png">
+                        <a href="https://codeur-pro.fr/les-portes-et-fonctions-logiques/">&rarr; Source</a>
+                        <p>&rarr; Il additionne des nombres binaires de plusieurs bits en enchaînant les additionneurs complets.</p>
+                
+                <h4>Les Multiplexeurs (MUX)</h4>
+                    <p><u>Définition :</u> <em> Ils permettent de sélectionner une entrée parmi plusieurs et de la diriger vers la sortie.</em></p>
+                    <p>Ceux-ci sont beaucoup utilisés pour transmettre des données comme à travers un BUS série. C'est <em>l'émetteur</em>.</p>
+                    <img src="../assets/Multiplexeur_a_8_voies_ou_8_vers_1.png">
+                    <ul><li><em>Sa représentation simplifiée est un sélectionneur de voie</em></li></ul>
+
+                    <table>
+                        <td>
+                            <img class="table" src="../assets/Multiplexeur_à_deux_entrées_-_circuit.png">
+                        </td>
+                        <td>
+                            <img class="table" src="../assets/2-to-1-MUX-truth-table.jpg">
+                        </td>
+                    </table>
+                    <ul><li><em>Sa représentation logique (réelle)</em></li></ul>
+                    <p>Ici le multiplexeur est à 2 voies.</p>
+                
+                <h4>Les Démultiplexeurs (DEMUX)</h4>
+                    <p><u>Définition :</u> <em> Ils font font l’inverse : ils prennent une entrée et la dirigent vers une des sorties possibles.</em></p>
+                    <p>Ceux-ci sont beaucoup utilisés pour transmettre des données comme à travers un BUS série. C'est <em>le récepteur</em>.</p>
+                    <img src="../assets/Demultiplexeur_a_8_voies_ou_1_vers_8.png">
+                    <ul><li><em>Sa représentation simplifiée est un sélectionneur de voie</em></li></ul>
+
+                    <table>
+                        <td>
+                            <img class="table" src="../assets/Demultiplexeur_à_deux_sorties_-_circuit.png">
+                        </td>
+                        <td>
+                            <img class="table" src="../assets/1-to-2-DEMUX-truth-table.png">
+                        </td>
+                    </table>
+                    <ul><li><em>Sa représentation logique (réelle)</em></li></ul>
+                    <p>Ici le démultiplexeur est à 2 voies.</p>
+
+                <p><strong>Voici un exemple de mise en commun de ces deux composants logiques :</strong></p>
+                <img src="../assets/Multiplexeur_et_demultiplexeur.png">
+            
+            <h3> B. Les circuits de logique séquentielle</h3>
+                <p><u>Définition :</u> <em>Un circuit séquentiel dépend non seulement des entrées actuelles, mais aussi de l’état précédent.</em></p>
+
+                <p>Contrairement aux circuits combinatoires, ces circuits possèdent une <strong>mémoire</strong>. Ils peuvent donc stocker des informations et les réutiliser plus tard.</p>
+
+                <h4>Les Bascules (Flip-Flops)</h4>
+                    <p><u>Définition :</u> <em>Ce sont les éléments fondamentaux de la mémoire dans les circuits numériques.</em></p>
+                    <ul>
+                        <li>Elles permettent de mémoriser un bit (0 ou 1).</li>
+                        <li>Elles changent d’état en fonction d’un signal (souvent une horloge).</li>
+                        <li>Elles sont construites à partir de portes logiques.</li>
+                    </ul>
+
+                    <p><strong>Types principaux de bascules :</strong></p>
+
+                    <h5>1. Bascule RS (Set-Reset)</h5>
+                        <p>&rarr; Permet de définir (Set) ou réinitialiser (Reset) un bit.</p>
+                        <p><em>Utilisation :</em> mémorisation simple, circuits de contrôle.</p>
+                        <table>
+                            <tr>
+                                <td>
+                                    <img class="table" src="../assets/RS_Flip-flop_(NOR).svg.png">
+                                </td>
+                                <td>
+                                    <table>
+                                        <tr>
+                                            <th>S</th>
+                                            <th>R</th>
+                                            <th>Q(n)</th>
+                                            <th>Q(n+1)</th>
+                                            <th>Q&#773;(n+1)</th>
+                                        </tr>
+                                        <tr>
+                                            <td>0</td>
+                                            <td>0</td>
+                                            <td>0/1</td>
+                                            <td>Q(n)</td>
+                                            <td>inverse Q(n)</td>
+                                        </tr>
+                                        <tr>
+                                            <td>0</td>
+                                            <td>1</td>
+                                            <td>0/1</td>
+                                            <td>0</td>
+                                            <td>1</td>
+                                        </tr>
+                                        <tr>
+                                            <td>1</td>
+                                            <td>0</td>
+                                            <td>0/1</td>
+                                            <td>1</td>
+                                            <td>0</td>
+                                        </tr>
+                                        <tr>
+                                            <td>1</td>
+                                            <td>1</td>
+                                            <td>0/1</td>
+                                            <td>INTERDIT</td>
+                                            <td>INTERDIT</td>
+                                        </tr>
+                                    </table>
+                                </td>
+                            </tr>
+                        </table>
+
+
+                    <h5>2. Bascule D (Data / Delay)</h5>
+                        <p>&rarr; Stocke la valeur d’entrée à chaque impulsion d’horloge.</p>
+                        <p><em>Utilisation :</em> registres, mémoire, synchronisation de signaux.</p>
+                        <table>
+                            <tr>
+                                <td>
+                                    <img class="table" src="../assets/D-type_Transparent_Latch_(NOR).svg.png">
+                                </td>
+                                <td>
+                                    <table>
+                                        <tr>
+                                            <th>D</th>
+                                            <th>Q(n+1)</th>
+                                            <th>Q&#773;(n+1)</th>
+                                        </tr>
+                                        <tr>
+                                            <td>0</td>
+                                            <td>0</td>
+                                            <td>1</td>
+                                        </tr>
+                                        <tr>
+                                            <td>1</td>
+                                            <td>1</td>
+                                            <td>0</td>
+                                        </tr>
+                                    </table>
+                                </td>
+                            </tr>
+                        </table>
+
+
+                    <h5>3. Bascule JK</h5>
+                        <p>&rarr; Version améliorée de la bascule RS, sans état interdit.</p>
+                        <p><em>Utilisation :</em> compteurs, circuits séquentiels complexes.</p>
+                        <table>
+                            <tr>
+                                <td>
+                                    <img class="table" src="../assets/JK.png">
+                                </td>
+                                <td>
+                                    <table>
+                                        <tr>
+                                            <th>J</th>
+                                            <th>K</th>
+                                            <th>Q(n)</th>
+                                            <th>Q(n+1)</th>
+                                            <th>Q&#773;(n+1)</th>
+                                        </tr>
+                                        <tr>
+                                            <td>0</td>
+                                            <td>0</td>
+                                            <td>0/1</td>
+                                            <td>Q(n)</td>
+                                            <td>inverse Q(n)</td>
+                                        </tr>
+                                        <tr>
+                                            <td>0</td>
+                                            <td>1</td>
+                                            <td>0/1</td>
+                                            <td>0</td>
+                                            <td>1</td>
+                                        </tr>
+                                        <tr>
+                                            <td>1</td>
+                                            <td>0</td>
+                                            <td>0/1</td>
+                                            <td>1</td>
+                                            <td>0</td>
+                                        </tr>
+                                        <tr>
+                                            <td>1</td>
+                                            <td>1</td>
+                                            <td>0</td>
+                                            <td>1</td>
+                                            <td>0</td>
+                                        </tr>
+                                        <tr>
+                                            <td>1</td>
+                                            <td>1</td>
+                                            <td>1</td>
+                                            <td>0</td>
+                                            <td>1</td>
+                                        </tr>
+                                    </table>
+                                </td>
+                            </tr>
+                        </table>
+
+
+                    <h5>4. Bascule T (Toggle)</h5>
+                        <p>&rarr; Change d’état (0 → 1 ou 1 → 0) à chaque impulsion si activée.</p>
+                        <p><em>Utilisation :</em> diviseurs de fréquence, compteurs binaires.</p>
+                        <table>
+                            <tr>
+                                <td>
+                                    <img class="table" src="../assets/T.png">
+                                </td>
+                                <td>
+                                    <table>
+                                        <tr>
+                                            <th>T</th>
+                                            <th>Q(n)</th>
+                                            <th>Q(n+1)</th>
+                                            <th>Q&#773;(n+1)</th>
+                                        </tr>
+                                        <tr>
+                                            <td>0</td>
+                                            <td>0/1</td>
+                                            <td>Q(n)</td>
+                                            <td>inverse Q(n)</td>
+                                        </tr>
+                                        <tr>
+                                            <td>1</td>
+                                            <td>0</td>
+                                            <td>1</td>
+                                            <td>0</td>
+                                        </tr>
+                                        <tr>
+                                            <td>1</td>
+                                            <td>1</td>
+                                            <td>0</td>
+                                            <td>1</td>
+                                        </tr>
+                                    </table>
+                                </td>
+                            </tr>
+                        </table>
+
+                <h4>Les Registres</h4>
+                    <p><u>Définition :</u> <em>Ils permettent de stocker temporairement plusieurs bits.</em></p>
+                    <p>Il existe également des <strong>registres à décalage</strong>,
+                        capables de déplacer les bits vers la gauche ou la droite à chaque impulsion d’horloge,
+                        ce qui est très utilisé pour le transfert et le traitement séquentiel des données.</p>
+                    <p>&rarr; Un registre est un ensemble de bascules permettant de stocker un mot binaire (ex : 8 bits, 16 bits…).</p>
+                    <p><em>Utilisation :</em> stockage de données, traitement dans les processeurs.</p>
+                    <a href="https://eseo-tech.github.io/CoCiNum/circuits-logiques/sequentiel-registres-et-compteurs.html">En savoir plus sur les registres ?</a>
+
+                <h4>Les Compteurs</h4>
+                    <p><u>Définition :</u> <em>Ils permettent de compter des impulsions ou des cycles d’horloge.</em></p>
+                    <p>&rarr; Ils sont souvent construits à partir de bascules en chaîne.</p>
+                    <p><em>Utilisation :</em> horloges, timers, division de fréquence.</p>
+                    <a href="https://eseo-tech.github.io/CoCiNum/circuits-logiques/sequentiel-registres-et-compteurs.html">En savoir plus sur les compteurs ?</a>
+
+        <h2>En résumé</h2>
+            <p>Grâce à la combinaison des portes logiques, des circuits combinatoires et des circuits séquentiels, un ordinateur peut effectuer des calculs, prendre des décisions et mémoriser des informations.<br>
+                Toute la puissance des systèmes modernes repose sur ces simples états binaires (<code>0</code> et <code>1</code>) et sur leur organisation en circuits de plus en plus complexes.</p>
+            <p>Ainsi, de simples transistors permettent de construire des processeurs capables d’exécuter des milliards d’opérations par seconde.</p>
+            <a href="architectury.html" id="page_suivante">Page suivante &rarr;</a>
+            <p><a href="index.html">&larr; Retour à l'accueil</a></p>
+</body>
+</html>
