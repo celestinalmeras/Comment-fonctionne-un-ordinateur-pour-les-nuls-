@@ -1,0 +1,200 @@
+PROPRIETARY LICENSE – PERSONAL USE ONLY
+
+Comment fonctionne un ordinateur pour les nuls
+Copyright (c) 2026, celestinalmeras. All rights reserved.
+
+GitHub repository:
+https://github.com/celestinalmeras/Comment-fonctionne-un-ordinateur-pour-les-nuls-
+
+
+1. Purpose
+
+This software (hereinafter referred to as “the Software”),
+including its source code, binaries, documentation, assets,
+configuration files and associated materials,
+is proprietary software and remains the exclusive property
+of celestinalmeras.
+
+This license grants limited rights strictly defined below.
+
+
+2. Permission to use
+
+The user is authorized to use the Software exclusively for:
+- personal,
+- private,
+- non-commercial,
+- and non-professional purposes.
+
+Any other use requires prior written authorization from the author.
+
+
+3. Prohibited actions
+
+Unless explicitly authorized in writing by the author,
+the following actions are strictly prohibited:
+
+- commercial or professional use of the Software,
+  whether direct or indirect,
+
+- selling, sublicensing, renting, hosting,
+  monetizing or integrating the Software into paid services,
+
+- modifying, adapting or creating derivative works
+  of the Software, except where explicitly permitted
+  in Section 4,
+
+- reverse engineering, decompilation,
+  disassembly or extraction of the source code,
+
+- reproducing, redistributing, publishing,
+  mirroring or sharing the Software,
+  in whole or in part,
+
+- removing or altering copyright notices,
+  author credits or license information.
+
+
+4. Permitted exceptions (PERSONAL USE ONLY)
+
+The following actions are permitted ONLY for strictly personal
+and non-commercial use:
+
+- translating the Software
+  (interface, messages, documentation),
+
+- porting the Software to another operating system
+  or hardware platform,
+
+provided that ALL of the following conditions are respected:
+
+- the resulting version remains entirely NON-COMMERCIAL,
+
+- no modification is made to the intended behavior,
+  core functionality or purpose of the Software,
+
+- this license file is included without modification,
+
+- a visible link to the original GitHub repository is included:
+
+  :contentReference[oaicite:1]{index=1}
+
+- the author is clearly credited as:
+  “celestinalmeras”.
+
+These exceptions do NOT grant ownership rights
+or redistribution rights.
+
+
+5. Distribution restrictions
+
+Distribution of the Software,
+including translated or ported versions,
+is prohibited without prior written authorization
+from the author.
+
+If distribution is exceptionally authorized,
+the distributor must:
+
+- keep this license file complete and unchanged,
+
+- include a visible link to the original repository:
+
+  https://github.com/celestinalmeras/Comment-fonctionne-un-ordinateur-pour-les-nuls-
+
+- clearly credit the author:
+  “celestinalmeras”.
+
+Authorization may be revoked at any time
+by the author.
+
+
+6. Incomplete source code notice
+
+Some parts of the source code, assets,
+modules, dependencies or internal tools
+may intentionally not be publicly available.
+
+If a required source file appears to be missing,
+users may contact the author to request clarification
+or access to the missing components.
+
+The author may, at their sole discretion,
+provide the missing sources or additional materials.
+
+
+7. Intellectual property
+
+All intellectual property rights related to the Software,
+including but not limited to:
+- source code,
+- binaries,
+- algorithms,
+- assets,
+- documentation,
+- branding,
+- architecture,
+- configuration files,
+- and associated materials,
+
+remain the exclusive property of the author.
+
+No ownership rights are transferred under this license.
+
+
+8. No warranty
+
+THE SOFTWARE IS PROVIDED “AS IS”,
+WITHOUT WARRANTY OF ANY KIND,
+EXPRESS OR IMPLIED,
+INCLUDING BUT NOT LIMITED TO WARRANTIES OF:
+- MERCHANTABILITY,
+- FITNESS FOR A PARTICULAR PURPOSE,
+- NON-INFRINGEMENT,
+- SECURITY,
+- OR COMPATIBILITY.
+
+
+9. Limitation of liability
+
+IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR:
+- DIRECT,
+- INDIRECT,
+- INCIDENTAL,
+- SPECIAL,
+- EXEMPLARY,
+- OR CONSEQUENTIAL DAMAGES,
+
+INCLUDING LOSS OF DATA,
+LOSS OF PROFITS,
+SYSTEM FAILURE,
+OR BUSINESS INTERRUPTION,
+
+ARISING FROM THE USE OR INABILITY
+TO USE THE SOFTWARE.
+
+
+10. Duration
+
+This license remains valid for the entire duration
+of copyright protection applicable under international
+and local laws.
+
+
+11. Termination
+
+Any violation of this license automatically terminates
+the rights granted to the user.
+
+Upon termination,
+the user must immediately stop using the Software
+and destroy all copies in their possession.
+
+
+12. Contact
+
+For authorization requests, legal inquiries,
+or missing source code requests,
+contact the author through GitHub:
+
+https://github.com/celestinalmeras
